@@ -19,7 +19,6 @@
 
 body {
     background-color: #9ac7915f;
-
 }
 
 h1 {
@@ -69,18 +68,22 @@ ul {
 
 .navbar a:hover {
     color: #84ab7c;
+    cursor: pointer;
 }
 
 .navbar a:active {
     color: white;
+    text-decoration: underline;
 }
 
 table a:hover {
     color:  #799d72;;
+    cursor: pointer;
 }
 
 table a:active {
     color: white;
+    text-decoration: underline;
 }
 
 h3 {
