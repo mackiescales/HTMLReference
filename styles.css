@@ -48,6 +48,10 @@ h1 {
     z-index: 1;
 }
 
+a {
+    cursor: pointer;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -68,7 +72,6 @@ ul {
 
 .navbar a:hover {
     color: #84ab7c;
-    cursor: pointer;
 }
 
 .navbar a:active {
@@ -78,7 +81,6 @@ ul {
 
 table a:hover {
     color:  #799d72;;
-    cursor: pointer;
 }
 
 table a:active {
