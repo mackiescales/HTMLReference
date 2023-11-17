@@ -1,0 +1,156 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9WlhyyTh89Y.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/spacemono/v13/i7dPIFZifjKcF5UAWdDRYEF8RXi4EwQ.woff2) format('woff2');
+}
+
+a {
+    color: #FAF8ED;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+/* Header */
+header {
+    font-family: 'Bebas Neue';
+}
+
+header {
+    color: #FAF8ED;;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+h1 {
+    color: #FAF8ED;
+    background-color: #002B5B;
+    font-size: 60px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+#navbar {
+    background-color: #1A5F7A;
+    font-size: 25px;
+    word-spacing: 10px;
+    overflow: auto;
+    padding: 10px;
+}
+
+#navbar a {
+    width: 25%;
+    display: inline;
+    float: left;
+    text-align: center;
+}
+
+#navbar a:hover {
+    color: #159895 ;
+}
+
+#navbar a:active {
+    color: #FAF8ED;
+}
+
+#breadcrumb a{
+    background-color: #159895;
+    text-align: center;
+    display: inline;
+    float: left;
+    width: 25%;
+    height: 50px;
+    padding: 10px;
+}
+
+#breadcrumb li+li ::before {
+    content: ">";
+    padding: 20px;
+}
+
+#breadcrumb a:hover {
+    color: #1A5F7A;
+}
+
+#breadcrumb a:active {
+    color: #FAF8ED;
+}
+
+#current a {
+    color: #002B5B;
+}
+
+/* Main */
+
+main {
+    color: #FAF8ED;
+    background-color: #57c5b685;
+    padding-top: 260px;
+    padding-bottom: 40px;
+}
+
+h2,
+h3 {
+    color: #FAF8ED;
+    font-family: 'Bebas Neue';
+    padding: 10px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: justify;
+}
+
+thead {
+    text-transform: uppercase;
+    background-color: #FAF8ED;
+}
+
+table, th, tr, td {
+    color: #FAF8ED;
+    background-color: #1A5F7A;
+    font-family: "Space Mono"; 
+    border: 2px solid #FAF8ED;
+    border-collapse: collapse;
+    margin: 15px;
+}
+
+table a:hover {
+    color: #159895;
+}
+
+#properties {
+    scroll-margin-top: 340px;
+}
+
+#shorthand-properties {
+    scroll-margin-top: 420px ;
+}
+
+#pseudo-classes {
+    scroll-margin-top: 360px;
+}

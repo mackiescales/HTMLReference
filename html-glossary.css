@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Bebas Neue';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9WlhyyTh89Y.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/spacemono/v13/i7dPIFZifjKcF5UAWdDRYEF8RXi4EwQ.woff2) format('woff2');
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+}
+/* Header */
+
+header {
+    font-family: 'Bebas Neue';
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+h1 {
+    color: #FAF8ED;
+    background-color: #285430;
+    text-align: center;
+    font-size: 60px;
+    padding: 20px 0px;
+}
+
+#navbar {
+    background-color: #5F8D4E;
+    overflow: auto;
+}
+
+#navbar a {
+    color: #FAF8ED;
+    font-size: 25px;
+    width: 25%;
+    display: inline;
+    float: left;
+}
+
+#navbar a:hover {
+    color: #285430;
+}
+
+#navbar a:active {
+    color: #FAF8ED;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#breadcrumb a {
+    color: #5F8D4E;
+    background-color: #FAF8ED;
+    display: inline;
+    float: left;
+    width: 25%;
+    height: 50px;
+    padding: 10px 0px;
+}
+
+#current a {
+    color: #285430;
+}
+
+#breadcrumb li+li :before {
+    content: "/";
+    padding-right: 50px;
+}
+
+#breadcrumb a:hover {
+    color: #285430;
+}
+
+#breadcrumb a:active {
+    color: ##5F8D4E;
+}
+
+/* Main */
+
+ main {
+    font-family: 'Space Mono';
+    color: #FAF8ED;
+    background-color: #E5D9B6;
+    padding-top: 280px;
+}
+
+section {
+    scroll-margin-top: 270px ;
+}
+
+h3 {
+    background-color:#A4BE7B;
+    width: 100%;
+}
+
+th {
+    text-transform: uppercase;
+    background-color:#5F8D4E; 
+}
+
+table a {
+    color: #FAF8ED;
+}
+
+table a:hover {
+    color: #5F8D4E;
+}
+
+table a:active {
+    color: #FAF8ED;
+}
+
+table {
+    background-color: #A4BE7B;
+    margin: 20px;
+}
+
+table, 
+th,
+tr,
+td {
+    border: 4px solid #5F8D4E;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+

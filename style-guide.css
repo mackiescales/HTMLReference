@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Bebas Neue';
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+    color: #FAF8ED;
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+h1 {
+    color: #FAF8ED;
+    background-color:#FF7B54;
+    font-size: 75px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+#navbar {
+    background-color:#FFB26B;
+    font-size: 30px;
+    padding: 10px;
+    overflow: auto;
+}
+
+#navbar a {
+    width: 50%;
+    display: inline;
+    float: left;
+    text-align: center;
+}
+
+ #navbar a:hover {
+    color: #FF7B54;
+    font-size: 35px;
+}
+
+#navbar a:active {
+    color: #FAF8ED;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#breadcrumb a {
+    color: #FFD56F;
+    background-color: #FAF8ED ;
+    border-bottom: 2px solid #F9B572;
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    float: left;
+    width: 25%;
+    padding: 10px 0px;  
+}
+
+#current a {
+    color: #939B62;
+    font-size: ;
+}
+
+#breadcrumb a:hover {
+    color: #939B62;
+}
+
+#breadcrumb a:active {
+    color: #FFD56F;
+}
+
+#breadcrumb li+li ::before {
+    content: "/";
+    padding-right: 30px;
+}
+
+/* Typography */
+
+#typography {
+    color: #FAF8ED;
+    background-color: #FFD56F;
+    width: 100%;
+    padding: 260px 20px 10px;
+    scroll-margin-top: 180px;
+}
+
+.font-family,
+.lowercase,
+.uppercase {
+    text-align: middle;
+    font-size: 25px;
+    background-color: #FAF8ED;
+    color: #939B62;
+    border: 2px solid #939B62;
+}
+
+table,
+th, 
+tr,
+td {
+    background-color: #5F8D4E;
+    border-collapse: collapse;
+    border: 2px solid #FAF8ED;
+    padding: 10px;
+}
+
+ 
+a:hover {
+    color: #FFD56F;
+    font-size: larger;
+}
+
+a:active {
+    color: #FAF8ED
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtr6Hw5aXp-p7K4KLg.woff2) format('woff2');
+}
+ 
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/worksans/v19/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K0nXBi8Jpo3ZKyHaQQ.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/raleway/v29/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrEVIT9d0c8.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/spacemono/v13/i7dPIFZifjKcF5UAWdDRYEF8RXi4EwQ.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/merriweather/v30/u-440qyriQwlOrhSvowK_l5-fCZMdeX3rg.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/robotoslab/v34/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2RjV9Su1cai.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/playfairdisplay/v36/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtPK-F2qC0s.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/bebasneue/v14/JTUSjIg69CK48gW7PXoo9WlhyyTh89Y.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Amatic SC';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/amaticsc/v26/TUZyzwprpvBS1izr_vOECuSfU5cP1Q.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Paytone One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/paytoneone/v23/0nksC9P7MfYHj2oFtYm2ChTtgPvfiwq-.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/righteous/v17/1cXxaUPXBpj2rGoU7C9WiHGFq8Kk1Q.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Bungee';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/bungee/v13/N0bU2SZBIuF2PU_0DXR1C9zfmQ.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Six Caps';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/sixcaps/v20/6ae_4KGrU7VR7bNmaYcV_3T4Pzoo.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Julius Sans One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/juliussansone/v18/1Pt2g8TAX_SGgBGUi0tGOYEga5WOwnsXy6KHHg.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Fugaz One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/fugazone/v19/rax_HiWKp9EAITukFsl8AxhfsUjQ8Q.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Mansalva';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/mansalva/v14/aWB4m0aacbtDfvq5NKliKY_NdDBh.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Londrina Outline';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/londrinaoutline/v27/C8c44dM8vmb14dfsZxhetg3pDH-STu07rACPHvM.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Agbalumo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/agbalumo/v2/55xvey5uMdT2N37KZfMCgLhW87DI.woff2) format('woff2');
+}
+
+#roboto {
+    font-family: Roboto;
+}
+
+#montserrat {
+    font-family: Montserrat;
+}
+
+#work-sans {
+    font-family: 'Work Sans';
+}
+
+#raleway {
+    font-family: Raleway;
+}
+#space-mono {
+    font-family: 'Space Mono';
+}
+
+#merriweather, {
+    font-family: Merriweather;
+}
+
+#roboto-slab {
+    font-family: 'Roboto Slab'
+}
+
+#playfair-display {
+    font-family: 'Playfair Display';
+}
+
+#bebas-neue {
+    font-family: 'Bebas Neue'
+}
+
+#amatic-sc {
+    font-family: 'Amatic SC';
+}
+
+#paytone-one {
+    font-family: 'Paytone One';
+}
+
+#righteous {
+    font-family: Righteous;
+}
+
+#bungee {
+    font-family: Bungee;
+}
+
+#six-caps {
+    font-family: 'Six Caps';
+}
+
+#julius-sans-one {
+    font-family: 'Julius Sans One';
+}
+
+#fugaz-one {
+    font-family: 'Fugaz One';
+}
+
+#mansalva {
+    font-family: Mansalva;
+}
+
+#londrina-outline {
+    font-family: 'Londrina Outline';
+    font-weight: bolder;
+}
+
+#agbalumo {
+    font-family: 'Agbalumo';
+}
+
+/* Colour Palettes */
+
+#colour-palettes {
+    color: #FF7B54;
+    background-color: #FAF8ED;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    scroll-margin-top: 180px;
+}
+
+#colour-palettes h3 {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+#colour-palettes img {
+    height: 200px;
+    width: 30%;
+    padding: 8px;
+}
+
+
+#oranges {
+    color: #F9B572;
+}
+
+#browns {
+    color: #682C0E;
+}
+
+#pinks {
+    color: #F675A8;
+}
+
+#purples {
+    color: #7A316F;
+}
+
+#blues {
+    color: #2C74B3;
+}
+
+#greens{
+    color: #5F8D4E;
+}
+
+#pastels {
+    color: #FFCACC;
+}
+
+.bright {
+    color: #219C90 ;
+}
+
+
+
+  
+  
+

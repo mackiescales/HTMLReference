@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Glossary</title>
+    <link href="css-glossary.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <h1>CSS Glossary</h1>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#properties" target="">Standard properties</a></li>
+                <li><a href="#shorthand-properties" target="">Shorthand properties</a></li>
+                <li><a href="#pseudo-classes" target="">Pseudo-classes</a></li>
+                <li><a href="#pseudo-elements" target="">Pseudo-elements</a></li>
+            </ul>
+        </nav>
+        <ul id="breadcrumb">
+            <li><a href="index.html" target="_blank">Home Page</a></li>
+            <li><a href="HTML-Glossary.html" target="_blank">HTML Glossary</a></li>
+            <li id="current"><a href="#">CSS Glossary</a></li>
+            <li><a href="style-guide.html" target="_blank">Style Guide</a></li>
+        </ul>
+    </header>
+    <main>
+        <h2>Standard Properties</h2>
+        <table id="properties">
+           <colgroup>
+              <col class="property"/>
+              <col class="description"/>
+              <col class="values"/>
+            </colgroup>
+            <thead>
+              <th>Property</th>
+              <th>Description</th>
+              <th>Example values</th>
+          </thead>
+          <tbody>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color" target="_blank">background-color:</a></td>
+              <td>Sets the background color of an element.</td>
+              <td> brown; #1A5F7A; rgb(255,255, 128); hsl (50, 33%, 53%);</td>
+            </tr> 
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-image" target="_blank">background-image</a></td>
+              <td>Sets one or more background images on an element.</td>
+              <td>url("...") url("...");</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse" target="_blank">border-collapse</a></td>
+              <td>Sets whether the cells inside a table have separate or shared borders.</td>
+              <td>collapse; separate;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing" target="_blank">box-sizing:</a></td>
+              <td>Sets how the total width and height of an element is calculated. 'content-box' gives you the default CSS box-sizing behaviour, whereas 'border-box' tells the browser to account for specified border/pading values. </td>
+              <td>border-box; content-box;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clear" target="_blank">clear:</a></td>
+              <td>Sets whether an element must be moved below floating elements that precede it, but also applies to non-floating elements. </td>
+              <td>none; left; right; both;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color" target="_blank">color:</a></td>
+              <td>Sets the foreground color of an element's text and text-decorations.</td>
+              <td>purple; #1A5F7A; rgb(255,255, 128); hsl (50, 33%, 53%);</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/content" target="_blank">content:</a></td>
+              <td>Replaces content with a generated value, and can be used to define what is rendered inside an element/pseudo-element. </td>
+              <td>url("..."); "/"; "emoji";</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">display:</a></td>
+              <td>Sets whether an element is treated as a block or inline box, and the layout used for its children, such as a flow layout, grid or flex. </td>
+              <td>block; inline-block; none; flex; grid;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/empty-cells" target="_blank">empty-cells:</a></td>
+              <td>Sets whether borders/backgrounds appear around table cells with no visible content.</td>
+              <td>show; hide</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float" target="_blank">float:</a></td>
+              <td>Places an element to the left or right side of its container, allowing text and inline elements to wrap around it and removes it from the normal flow of the page.</td>
+              <td>none; left; right</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face" target="_blank">@font-face:</a></td>
+              <td>Specifies a custom font, downloadedfroma  remote server or locally installed, in which to dsplay text</td>
+              <td>font-family: '...'; font-style: font-weight: 400; font-display: swap;
+                            src: url('...') format('woff2');</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" target="_blank">font-family:</a></td>
+              <td>Specifies a prioritised list of one or more font-family and/or generic family names.</td>
+              <td>'Gill Sans', sans serif; cursive;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank">font-size:</a></td>
+              <td>Sets the size of the font.</td>
+              <td>1.2rem; x-small; 12px; 80%;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-style" target="_blank">font-style:</a></td>
+              <td>Sets whether a font should be styled with a normal, italic or oblique face from its font-family.</td>
+              <td>normal; italic; oblique;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight" target="_blank">font-weight:</a></td>
+              <td>Sets the weight/boldness of the font. The availabilit depends on the font-family currently set. </td>
+              <td>normal; bold; lighter; bolder; 85%</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height" target="_blank">height:</a></td>
+              <td>Specifies the height of an element/its content area. </td>
+              <td>150px; 6em; 75%; auto;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing" target="_blank">letter-spacing:</a></td>
+              <td>Sets the horizontal spacing behaviour between text characters; positivevalues spread characters farther apart whereas negative values bring them closer together.</td>
+              <td>normal; .2rem; -1px;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height" target="_blank">line-height:</a></td>
+              <td>Sets the minimum height of a line box/to set the distance between the lines of text.</td>
+              <td>normal; 2.5; 150%; 32px;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-height" target="_blank">max-height:</a></td>
+              <td>Sets the maximum height of an element to prevent the value of the height property from becoming larger than said height.</td>
+              <td>150px; 7em; 75%;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/min-height" target="_blank">min-height:</a></td>
+              <td>Sets the minimum height of an element to prevent the value of the height element from becoming smaller than said height.</td>
+              <td>150px; 7em; 75%;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/opacity" target="_blank">opacity:</a></td>
+              <td>Sets the opacity, which is the degree to which content behind an element is hidden.</td>
+              <td>0, 0.33%, 1;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">position:</a></td>
+              <td>Sets how an element is positioned in a document, used with the top, right, botto and left properties to determind the final location of positioned elements. </td>
+              <td>static; relative; absolute; sticky; top: 40px;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" target="_blank">text-align:</a></td>
+              <td>Sets the horizontal alignment of the content inside a block element or table-cell.</td>
+              <td>left; right; center; start; end; justify;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width" target="_blank">width:</a></td>
+              <td>Sets the width of an elements content area, or the width of the border area when box-sizing is set to border-box.</td>
+              <td>150px; 75%; auto; 20em;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing" target="_blank">word-spacing:</a></td>
+              <td>Sets the length of space between words and tags.</td>
+              <td>normal; 4px; 1rem;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index" target="_blank">z-index:</a></td>
+              <td>Sets the z-order of a positioned element and its descendants; overlapping elements with a higher z-index will cover those with a smaller one.</td>
+              <td>auto; 1; -1;</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Shorthand properties</h2>
+        <h3>CSS properties that let you set the values of multiple other CSS properties acting on the same theme simultaneously, allowing for more concise and readable style sheets.</h3>
+        <table id="shorthand-properties">
+          <colgroup>
+            <col class="shorthand-property"/>
+            <col class="description"/>
+            <col class="values"/>
+          </colgroup>
+          <thead>
+            <th>Shorthand property</th>
+            <th>Description</th>
+            <th>Example values</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border" target="_blank">border:</a></td>
+              <td>Sets an elements border using the values of <em>border-width, border-stye</em> and <em>border-color</em>. </td>
+              <td>1px, solid, white;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius" target="_blank">border-radius</a></td>
+              <td>Shorthand property that rounds the corner of an element's outer border edge, often used to make circular corners.  </td>
+              <td>25% 10%; 10% 40% 50%; 10px 100px;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font" target="_blank">font:</a></td>
+              <td>Shorthand property that sets all the different properties of an element's font, including   font-style, font-weight, font-size, line height, and font-family.</td>
+              <td>italic, bolder, 16px/1.5, 'Bebas Neue', sans serif;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin" target="_blank">margin:</a></td>
+              <td>Shorthand property that sets the margin area (the space around an element's border) on all four sides (-top, -right, -bottom, -left) of an element. Can use -top, -right, -bottom or -left to specify only one side.</td>
+              <td>10px 50px 20px 0px; 0x; 1em; 5% 10%; auto; </td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/overflow" target="_blank">overflow:</a></td>
+              <td>Shorthand property that sets the desired behaviour when content does not fit in the parent element box horizontally (overflow-x) or vertically (overflow-y).</td>
+              <td>visible; hidden; scroll; auto;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding" target="_blank">padding:</a></td>
+              <td>Shorthand porperty that sets the padding area (the inner space surrounding the element) on all four sides of an element (-top, -right, -bottom, -left) at once</td>
+              <td>10% 0; 10px 25px; 10px 30px 50px 70px;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-margin" target="_blank">scroll-margin</a></td>
+              <td>Shorthand porperty that sets all four sides (-top, -right, -bottom, -left) of an element's scroll margin at once. </td>
+              <td>20px; 0; 2em;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration" target="_blank">text-decoration:</a></td>
+              <td>Shorthand property that sets the appearance of decorative lines on text.</td>
+              <td>underline; underline dotted red; green wavy underline;</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Pseudo-classes</h2>
+        <h3>A keyword added to a selector that specifies the state of the selected element.</h3>
+        <table id="pseudo-classes">
+          <colgroup>
+            <col class="pseudo-class"/>
+            <col class="description"/>
+            <col class="properties"/>
+          </colgroup>
+          <thead>
+            <th>Pseudo-class</th>
+            <th>Description</th>
+            <th>Example properties</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:active" target="_blank">:active</a></td>
+              <td>Creates a pseudo-class that represents an element (e.g. a button or link) that is being activated by the user</td>
+              <td>color: red; font-weight: bold; font-style: italic;</td>
+            </tr> 
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:hover" target="_blank">:hover</a></td>
+              <td>Creates a pseudo-class for when the user interacts with an element with a cursor but doesn't necessarily activate it. </td>
+              <td> color: red; font-weight: bold; font-style: italic;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:link" target="_blank">link:</a></td>
+              <td>Creates a pseudo-class that reperesents an element that has not yet been visited. </td>
+              <td>color: red; font-weight: bold; font-style: italic;</td>
+            </tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:visited" target="_blank">visited:</a></td>
+              <td>Creates a pseudo-class that applies to links that have been visited by the user.</td>
+              <td>color: red; font-weight: bold; font-style: italic;</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Pseudo-elements</h2>
+        <h3>A keyword added to a selector that lets you style a specific part of the selected element.</h3>
+        <table id="pseudo-elements">
+          <colgroup>
+            <col class="pseudo-class"/>
+            <col class="description"/>
+            <col class="properties"/>
+          </colgroup>
+          <thead>
+            <th>Pseudo-class</th>
+            <th>Description</th>
+            <th>Example properties</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::after" target="_blank">::after</a> </td>
+              <td>Creates a pseudo-element that is the last child of the seleced element, often used to add cosmetic-content (aka breadcrumbs) to an element with the content:"..."; property.  </td>
+              <td>content: ">"</td>
+              </tr>
+            <tr>
+            <tr>
+              <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before" target="_blank">::before;</a></td>
+              <td>Creates a pseudo-element that is the first child of the selected element, often used to add cosmetic-content (aka breadcrumbs) to an element with the content:"..."; property</td>
+              <td>content: "X";</td>
+            </tr>
+            <tr>
+              <td><a href="" target="_blank"></a></td>
+              <td></td>
+              <td></td>
+            </tr>          
+        </table>          
+      </section>
+    </main>
+</body>
+</html>
